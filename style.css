@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-image: url(img/background.png);
     height: 100vh; /* Prend tout l'écran */
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,9 +17,10 @@ body {
   }
   
   .product-card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     max-width: 650px;
     width: 100%;
@@ -123,8 +124,8 @@ body {
 
 .shop-button button:last-child {
     flex: 1; /* Le deuxième bouton occupe 10% de l'espace */
-    background-color: #c5dff6;
-    color: #0d67b7;
+    background-color: #90bde5;
+    color: white;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -181,3 +182,9 @@ color: red;
         padding-bottom: 30px;
     }
   } 
+
+  @media (max-width: 1225px) {
+    body {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); 
+    transition: all 0.5s ease;
+}
