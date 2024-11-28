@@ -13,10 +13,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-  }
+}
   
-  .product-card {
+.product-card {
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     border-radius: 12px;
@@ -32,56 +31,56 @@ body {
     transition: all 0.5s ease;
 }
   
-  .product-image img {
+.product-image img {
     width: 300px;
     border-radius: 8px;
     margin-right: 0 25px;
-  }
+}
   
-  .product-info {
+.product-info {
     color: #333;
     text-align: left;
-  }
-  
-  .brand-reference {
+}
+
+.brand-reference {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .brand {
+.brand {
     display: inline-block;
     background-color: black;
     color: white;
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 12px;
-  }
+}
 
-  .reference {
+.reference {
     font-size: 10px;
     color: #aaa;
-  }
+}
   
-  .product-name {
+.product-name {
     font-size: 25px;
     font-weight: bold;
     margin: 10px 0 -2px 0;
-  }
+}
   
-  .rating {
+.rating {
     color: #fbc02d;
     font-size: 12px;
     
-  }
+}
   
-  .reviews {
+.reviews {
     color: #666;
     font-size: 12px;
     margin-left: 5px;
-  }
+}
   
-  .price {
+.price {
     margin: 50px 0 10px 0;
     font-size: 18px; 
     display: flex;
@@ -91,20 +90,20 @@ body {
     gap: 5px;
 }
   
-  .original-price {
+.original-price {
     text-decoration: line-through;
     color: #aaa;
     margin-right: 10px;
     font-size: 12px;
-  }
+}
   
-  .discounted-price {
+.discounted-price {
     color: black;
     font-weight: bold;
     font-size: 40px;
-  }
+}
   
-  .shop-button {
+.shop-button {
     display: flex;
     gap: 10px;
     width: 100%;
@@ -137,14 +136,14 @@ body {
 .shop-button button:first-child:hover {
     background-color: #119464;
     transform: scale(1.1);
-  }
+}
   
 .red-heart {
 color: red;
 }
   
-  /* Responsive */
-  @media (max-width: 768px) {
+/* Responsive */
+@media (max-width: 768px) {
     .product-card {
       flex-direction: column;
       align-items: center;
@@ -163,10 +162,11 @@ color: red;
     .shop-button {
         padding-bottom: 30px;
     }
-  } 
+} 
 
-  @media (max-width: 1225px) {
+@media (max-width: 1225px) {
     body {
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); 
     transition: all 0.5s ease;
+    }
 }
