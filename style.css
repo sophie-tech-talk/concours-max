@@ -142,24 +142,6 @@ body {
 .red-heart {
 color: red;
 }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: black;
-    text-align: center;
-    font-size: 14px;
-    padding: 10px;
-  }
-  
-  .footer a {
-    color: #075858;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
   
   /* Responsive */
   @media (max-width: 768px) {
