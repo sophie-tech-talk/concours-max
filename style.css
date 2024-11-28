@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", serif;
+}
+
+body {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    height: 100vh; /* Prend tout l'écran */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0; /* Supprime les marges par défaut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 40px 30px;
+    transition: all 0.5s ease;
+}
+  
+  .product-image img {
+    width: 300px;
+    border-radius: 8px;
+    margin-right: 0 25px;
+  }
+  
+  .product-info {
+    color: #333;
+    text-align: left;
+  }
+  
+  .brand-reference {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+
+  .reference {
+    font-size: 10px;
+    color: #aaa;
+  }
+  
+  .product-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0 -2px 0;
+  }
+  
+  .rating {
+    color: #fbc02d;
+    font-size: 12px;
+    
+  }
+  
+  .reviews {
+    color: #666;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .price {
+    margin: 50px 0 10px 0;
+    font-size: 18px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #aaa;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  
+  .discounted-price {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+  .shop-button {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.shop-button button:first-child {
+    flex: 9; /* Le premier bouton occupe 90% de l'espace */
+    background-color: #0d67b7;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 12px;
+}
+
+.shop-button button:last-child {
+    flex: 1; /* Le deuxième bouton occupe 10% de l'espace */
+    background-color: #c5dff6;
+    color: #0d67b7;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.shop-button button:first-child:hover {
+    background-color: #119464;
+    transform: scale(1.1);
+  }
+  
+.red-heart {
+color: red;
+}
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .footer a {
+    color: #075858;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .product-card {
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      margin: 60px auto;
+      padding: 20px;
+      transition: all 0.5s ease;
+    }
+  
+    .product-image img {
+      margin: 20px 0;
+      width: 70%;
+      max-width: 300px;
+    }
+
+    .shop-button {
+        padding-bottom: 30px;
+    }
+  } 
